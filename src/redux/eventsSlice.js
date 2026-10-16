@@ -10,7 +10,7 @@ export const eventsSlice = createSlice({
       keyword: '',
       category: 'All',
       city: '',
-      sort: 'date,asc',
+      sort: 'relevance,desc',
     },
   },
   reducers: {
