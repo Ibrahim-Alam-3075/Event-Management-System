@@ -1,0 +1,22 @@
+.footer-container {
+  margin-top: auto;
+  background-color: black;
+  color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer-subtext {
+  font-size: 12px;
+  color: gray;
+}
