@@ -5,10 +5,10 @@ function Footer() {
     <footer className="footer-container">
       <div className="footer-inner">
         <p className="footer-text">
-          &copy; {new Date().getFullYear()} EventHub — Event Management System.
+          &copy; {new Date().getFullYear()} Event Pulse
         </p>
         <p className="footer-subtext">
-          Powered by React, Redux Toolkit & Ticketmaster Discovery API.
+          Powered by Ibrahim Alam & Co.
         </p>
       </div>
     </footer>

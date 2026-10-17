@@ -30,7 +30,7 @@ function LoginPage() {
 
   return (
     <div className="auth-container">
-      <h2>Login to EventHub</h2>
+      <h2>Login to Event Pulse</h2>
 
       <form onSubmit={handleSubmit} className="auth-form">
         <div className="form-group">

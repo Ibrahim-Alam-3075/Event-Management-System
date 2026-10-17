@@ -12,8 +12,8 @@ function Navbar() {
 
   const userRegistrationsCount = currentUser
     ? registrations.filter(
-        (r) => r.userEmail.toLowerCase() === currentUser.email.toLowerCase()
-      ).length
+      (r) => r.userEmail.toLowerCase() === currentUser.email.toLowerCase()
+    ).length
     : 0
 
   const handleLogout = () => {
@@ -25,11 +25,8 @@ function Navbar() {
     <header className="navbar-container">
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
-          <div className="logo-icon-wrapper">
-            <Ticket className="logo-icon" size={24} />
-          </div>
           <span className="logo-text">
-            Event<span className="logo-accent">Hub</span>
+            Event<span className="logo-accent"> Pulse</span>
           </span>
         </Link>
 
