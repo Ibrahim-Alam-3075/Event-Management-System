@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { Calendar, User, LogOut, LogIn, Ticket } from 'lucide-react'
+import { Calendar, User, LogOut, LogIn, CalendarCheck } from 'lucide-react'
 import { logoutUser } from '../redux/authSlice'
 import './Navbar.css'
 
@@ -38,7 +38,7 @@ function Navbar() {
 
           {isAuthenticated && (
             <Link to="/my-events" className="nav-link">
-              <Ticket size={18} />
+              <CalendarCheck size={18} />
               <span>My Events</span>
               {userRegistrationsCount > 0 && (
                 <span className="nav-badge">{userRegistrationsCount}</span>
