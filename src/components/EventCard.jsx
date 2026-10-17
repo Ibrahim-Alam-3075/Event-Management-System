@@ -3,20 +3,11 @@ import { Calendar, MapPin, Tag } from 'lucide-react'
 import './EventCard.css'
 
 function EventCard({ event }) {
-  const imageUrl =
-    event.images?.find((img) => img.ratio === '16_9')?.url ||
-    event.images?.[0]?.url ||
-    ''
-
-  const date = event.dates?.start?.localDate || 'Date TBA'
-  const venue =
-    event._embedded?.venues?.[0]?.name ||
-    event.place?.name ||
-    'Venue TBA'
-  const city =
-    event._embedded?.venues?.[0]?.city?.name ||
-    event.place?.city?.name ||
-    ''
+  const venue = event._embedded?.venues?.[0]
+  const imageUrl = event.images?.[0]?.url
+  const date = event.dates?.start?.localDate
+  const venueName = venue?.name
+  const city = venue?.city?.name
   const category = event.classifications?.[0]?.segment?.name || 'Event'
 
   return (
@@ -39,7 +30,7 @@ function EventCard({ event }) {
           <p className="meta-item">
             <MapPin size={15} />
             <span>
-              {venue}
+              {venueName}
               {city ? `, ${city}` : ''}
             </span>
           </p>

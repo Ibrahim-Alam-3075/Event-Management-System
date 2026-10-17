@@ -25,15 +25,17 @@ export const registrationsSlice = createSlice({
         return
       }
 
+      const venue = event._embedded?.venues?.[0]
+
       const newRegistration = {
         id: `reg_${Date.now()}`,
         eventId: event.id,
         eventName: event.name,
-        eventDate: event.dates?.start?.localDate || '',
-        eventTime: event.dates?.start?.localTime || '',
-        venueName: event._embedded?.venues?.[0]?.name || 'TBA',
-        city: event._embedded?.venues?.[0]?.city?.name || '',
-        imageUrl: event.images?.[0]?.url || '',
+        eventDate: event.dates?.start?.localDate,
+        eventTime: event.dates?.start?.localTime,
+        venueName: venue?.name || 'TBA',
+        city: venue?.city?.name || '',
+        imageUrl: event.images?.[0]?.url,
         category: event.classifications?.[0]?.segment?.name || 'General',
         userEmail: userEmail.toLowerCase(),
         userName: userName || userEmail,
