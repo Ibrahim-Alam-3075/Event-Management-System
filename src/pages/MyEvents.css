@@ -1,0 +1,179 @@
+.my-events-container {
+  padding: 10px 0;
+}
+
+.my-events-header {
+  margin-bottom: 25px;
+}
+
+.my-events-header h1 {
+  font-size: 26px;
+  color: black;
+  margin-bottom: 6px;
+}
+
+.my-events-header p {
+  color: gray;
+  font-size: 15px;
+}
+
+.tab-filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab-btn.active {
+  background-color: navy;
+  color: white;
+  border-color: navy;
+  font-weight: bold;
+}
+
+.registrations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reg-card {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+  align-items: center;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.reg-card-img {
+  width: 140px;
+  height: 110px;
+  object-fit: cover;
+  background-color: lightgray;
+  flex-shrink: 0;
+}
+
+.reg-card-content {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.reg-card-title {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.reg-card-meta {
+  display: flex;
+  gap: 15px;
+  color: gray;
+  font-size: 13px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.upcoming {
+  background-color: navy;
+  color: white;
+}
+
+.status-badge.completed {
+  background-color: gray;
+  color: white;
+}
+
+.reg-card-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn-reg-details {
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-cancel-reg {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cancel-reg:hover {
+  background-color: red;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  border: 1px dashed gray;
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+
+.empty-state h3 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.empty-state p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.btn-explore {
+  display: inline-block;
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .reg-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+  }
+  .reg-card-img {
+    width: 100%;
+    height: 150px;
+  }
+  .reg-card-actions {
+    margin-top: 10px;
+  }
+}
